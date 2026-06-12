@@ -13,8 +13,8 @@ export function Footer() {
         {/* Brand Block */}
         <div className="space-y-4">
           <div className="flex items-center gap-2">
-            <div className="p-2 rounded-xl bg-primary/10 text-primary">
-              <Shield className="h-5 w-5" />
+            <div className="p-1.5 rounded-xl bg-primary/5 border border-primary/10">
+              <img src="/logo.png" alt="Vault@Xis Logo" className="h-6 w-6 object-contain" />
             </div>
             <span className="font-extrabold tracking-wider text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400">
               Vault@Xis
