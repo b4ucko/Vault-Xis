@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/use-theme";
+import { Analytics } from "@vercel/analytics/react";
 import Index from "./pages/Index";
 import NasSetup from "./pages/NasSetup";
 import NasFiles from "./pages/NasFiles";
@@ -26,6 +27,7 @@ const App = () => (
       <ThemeProvider>
         <Toaster />
         <Sonner />
+        <Analytics />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
