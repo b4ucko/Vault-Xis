@@ -18,6 +18,8 @@ import Pbkdf2Spec from "./pages/Pbkdf2Spec";
 import WebCryptoSpec from "./pages/WebCryptoSpec";
 import WebdavIntegration from "./pages/WebdavIntegration";
 import CloudSync from "./pages/CloudSync";
+import ScrollToTop from "@/components/ScrollToTop";
+
 
 const queryClient = new QueryClient();
 
@@ -29,6 +31,7 @@ const App = () => (
         <Sonner />
         <Analytics />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/nas-setup" element={<NasSetup />} />

@@ -89,6 +89,11 @@ const Index = () => {
     loadFiles();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Scroll to top when tab or workspace changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeWorkspace, activeTab]);
   
   const handleDecryptFile = (file: FileItem) => {
     setSelectedFile(file);
